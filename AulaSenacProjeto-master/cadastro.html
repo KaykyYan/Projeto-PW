@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WEB/assets/css/style.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+        <!-- Nav Bar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    <span>EcoMap</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                    <a href="login.html">Login</a>
+                    <a href="#">Cadastro</a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+        <!-- Tela de Cadastro -->
+         <div class="container-login">
+            <div class="cabecalho-login">
+                <h1>Cadastre-se no EcoMap</h1>
+                <p>Ao se cadastrar, você ganha bônus por participar de eventos e entregar resíduos para reciclagem!</p>
+            </div>
+
+            <div class="cartao-login">
+                <h2>Cadastra-se</h2>
+
+                <form action="" class="formulario-login">
+                    <div class="grupo-campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite o seu email" name="email" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="confirmar-senha">Confirmar senha</label>
+                        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a sua senha" required>
+                    </div>
+
+                    <div class="grupo-campo-checkbox">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Concordo com os termos de uso</label>
+                    </div>
+
+                    <button type="submit" class="btn-entrar">Cadastra-se</button>
+                </form>
+
+                <div class="rodape-login">
+                    <p>Já tem uma conta? <a href="index.html" class="link-cadastro">Faça login!</a></p>
+                </div>
+            </div>
+         </div>
+        </main>
+</body>
+</html>

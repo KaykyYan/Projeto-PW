@@ -56,18 +56,18 @@ main {
     padding: 4rem 1.5rem;
 }
 
-.hero {
+.main-inicio {
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.hero h1 {
+.main-inicio h1 {
     font-size: 2rem;
     color: #111827;
     margin-bottom: 1rem;
 }
 
-.hero h2 {
+.main-inicio h2 {
     font-size: 1.25rem;
     color: #374151;
     font-weight: normal;
@@ -309,11 +309,11 @@ main {
         gap: 1rem;
     }
 
-    .hero h1 {
+    .main-inicio h1 {
         font-size: 1.5rem;
     }
 
-    .hero h2 {
+    .main-inicio h2 {
         font-size: 1rem;
     }
 

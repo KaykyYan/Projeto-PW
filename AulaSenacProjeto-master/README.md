@@ -4,6 +4,7 @@ Olá! Seja bem-vindo ao projeto. A ideia aqui é desenvolver um projeto web, que
 Nosso foco é entregar uma experiência fluida e que realmente faça sentido para quem acessa, trazendo informações relevantes e ferramentas que facilitem o cadastro e o contato direto com a equipe.
 
 🚀 Funcionalidades Principais
+
 🔹 Página Inicial (Home)
 Logo de cara, mostramos nossa missão e visão de forma transparente, para que todo mundo entenda a essência do projeto. Além disso, a ideia é deixar tudo mais dinâmico com imagens e vídeos interativos, junto de botões que levam rapidamente para cadastro e contato direto.
 

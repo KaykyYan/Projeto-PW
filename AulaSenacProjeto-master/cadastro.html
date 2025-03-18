@@ -35,7 +35,7 @@
             <div class="cartao-login">
                 <h2>Cadastra-se</h2>
 
-                <form action="" class="formulario-login">
+                <form action="" class="formulario-login" onsubmit="return validarInformacoesforms()">
                     <div class="grupo-campo">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
@@ -61,6 +61,8 @@
                         <label for="termos">Concordo com os termos de uso</label>
                     </div>
 
+                    <div id="error-message" class="error-message"></div>
+                    
                     <button type="submit" class="btn-entrar">Cadastra-se</button>
                 </form>
 
@@ -70,5 +72,7 @@
             </div>
          </div>
         </main>
+
+        <script src="/AulaSenacProjeto-master/assets/js/script.js"></script>
 </body>
 </html>

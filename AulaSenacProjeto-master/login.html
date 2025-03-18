@@ -36,7 +36,7 @@
             <div class="cartao-login">
                 <h2>Faça login em sua conta</h2>
                 
-                <form class="formulario-login">
+                <form class="formulario-login" onsubmit="return validarInformacoeslogin()">
                     <div class="grupo-campo">
                         <label for="email">E-mail</label>
                         <input type="email" placeholder="Digite o seu E-mail" id="email" name="email" required>
@@ -58,5 +58,7 @@
             </div>
         </div>
     </main>
+
+    <script src="/AulaSenacProjeto-master/assets/js/script.js"></script>
 </body>
 </html>

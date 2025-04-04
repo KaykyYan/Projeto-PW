@@ -306,6 +306,22 @@ main {
     display: none;
 }
 
+/* Estilização do CAPTCHA */
+.grupo-campo .g-recaptcha {
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 2px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s;
+    display: inline-block;
+}
+
+.grupo-campo .g-recaptcha:hover {
+    border-color: #059669;
+}
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;

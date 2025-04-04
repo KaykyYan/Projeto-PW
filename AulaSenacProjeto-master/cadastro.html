@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/AulaSenacProjeto-master/assets/css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdgcworAAAAAKQ6wqXMEfnZ4tPgYJ0ZMD_M_hQz"></script>
     <title>Tela de Cadastro</title>
 </head>
 <body>
@@ -47,6 +48,16 @@
                     </div>
 
                     <div class="grupo-campo">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" maxlength="9" onblur="buscarEnderecoPorCEP()" placeholder="CEP" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" placeholder="Endereço" required>
+                    </div>
+
+                    <div class="grupo-campo">
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" required>
                     </div>
@@ -59,6 +70,10 @@
                     <div class="grupo-campo-checkbox">
                         <input type="checkbox" id="termos" name="termos" required>
                         <label for="termos">Concordo com os termos de uso</label>
+                    </div>
+
+                    <div class="grupo-campo" style="margin-top: 15px;">
+                        <div class="g-recaptcha" data-sitekey="6LdgcworAAAAAKQ6wqXMEfnZ4tPgYJ0ZMD_M_hQz"></div>
                     </div>
 
                     <div id="error-message" class="error-message"></div>

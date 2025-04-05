@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/AulaSenacProjeto-master/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Tela Inicial</title>
 </head>
 <body>
@@ -16,8 +17,8 @@
             </div>
             <div class="nav-links">
                 <a href="index.html">Inicio</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#feedback">Contato</a>
                 <a href="login.html">Login</a>
                 <a href="cadastro.html">Cadastro</a>
             </div>
@@ -41,12 +42,14 @@
             </button>
             <div class="carrossel-imagem-inicio">
                 <img src="/AulaSenacProjeto-master/assets/image/imagem-1.png" alt="Reciclagem">
+                <img src="/AulaSenacProjeto-master/assets/image/sobre-1.png" alt="Natureza">
+                <img src="/AulaSenacProjeto-master/assets/image/sobre-2.png" alt="Energia limpa">
             </div>
         </div>
 
         <!-- Chamada para ação Button -->
         <div class="chamada-acao">
-            <button>Saiba Mais!!!</button>
+            <a href="#sobre" class="botao-cta">Saiba Mais!!!</a>
         </div>
 
         <!-- Acao do Carrosel -->
@@ -54,5 +57,113 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
         </div>
     </main>
+
+                <!-- Seção Sobre -->
+        <section id="sobre" class="secao-sobre">
+            <h2>Sobre nós</h2>
+            <div class="conteudo-sobre">
+                <div class="texto-sobre">
+                    <p>Nós acreditamos que cada pequeno gesto conta na construção de um futuro mais sustentável. Nosso objetivo é facilitar a coleta e reciclagem de resíduos, promovendo a conscientização e recompensando aqueles que fazem parte dessa mudança</p>
+                </div>
+                <div class="imagens-sobre">
+                    <div class="container-imagem">
+                        <img src="/AulaSenacProjeto-master/assets/image/sobre-1.png" alt="Reciclagem em ação">
+                    </div>
+                    <div class="container-imagem">
+                        <img src="/AulaSenacProjeto-master/assets/image/sobre-2.png" alt="Reciclagem em ação">
+                    </div>
+                </div>
+                <p class="rodape-sobre">Com a sua ajuda, podemos reduzir o impacto ambiental, aumentar a reciclagem e criar um futuro mais verde para todos</p>
+            </div>
+        </section>
+
+        <!-- Seção Feedback -->
+            <section class="secao-feedback">
+                <h2>Feedback!!! Olha o que estão falando sobre</h2>
+                <div class="container-feedback">
+                <button class="botao-carrossel anterior" aria-label="Voltar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+                </button>
+            
+                <div class="carrossel-feedback" id="carrossel-feedback">
+                    <!-- Cartões de feedback -->
+                    <div class="cartao-feedback">
+                    <div class="avatar-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <p>Ótimo serviço! Voltarei sempre.</p>
+                    <strong>João Silva</strong>
+                    </div>
+                    <div class="cartao-feedback">
+                    <div class="avatar-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <p>Atendimento impecável, recomendo.</p>
+                    <strong>Maria Oliveira</strong>
+                    </div>
+                    <div class="cartao-feedback">
+                    <div class="avatar-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <p>Sistema rápido e fácil de usar.</p>
+                    <strong>Carlos Souza</strong>
+                    </div>
+                    <div class="cartao-feedback">
+                    <div class="avatar-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <p>Equipe muito atenciosa, parabéns!</p>
+                    <strong>Luciana Gomes</strong>
+                    </div>
+                    <div class="cartao-feedback">
+                    <div class="avatar-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <p>Experiência acima das expectativas!</p>
+                    <strong>Thiago Lima</strong>
+                    </div>
+                    <div class="cartao-feedback">
+                    <div class="avatar-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <p>Fácil de navegar, ótimo design!</p>
+                    <strong>Aline Ferreira</strong>
+                    </div>
+                    <div class="cartao-feedback">
+                    <div class="avatar-usuario"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <p>Super recomendo, muito prático.</p>
+                    <strong>Pedro Henrique</strong>
+                    </div>
+                </div>
+            
+                <button class="botao-carrossel proximo" aria-label="Próximo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+                </button>
+                </div>
+            </section>
+          
+        <!-- Seção Contato -->
+        <section id="contato" class="secao-contato">
+            <h2>Contatos</h2>
+            <div class="container-contato">
+                <form class="formulario-contato">
+                    <div class="grupo-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" class="campo-formulario" required>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="campo-formulario" required>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="campo-formulario" required></textarea>
+                    </div>
+                    <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+            <!-- LOGO EcoMap -->
+            <div class="logo1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+                <span>EcoMap</span>
+            </div>
+
+            <p class="direitos-autorais">© 2024 EcoMap. Todos os direitos reservados.</p>
+        </section>
+    </main>
+
+    <script src="/AulaSenacProjeto-master/assets/js/script.js"></script>
 </body>
 </html>

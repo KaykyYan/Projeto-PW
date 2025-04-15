@@ -390,6 +390,30 @@ main {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.widget-clima {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 999;
+}
+
+.widget-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+}
+
 .logo1 {
     display: flex;
     align-items: center;

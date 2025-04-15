@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/AulaSenacProjeto-master/assets/css/style.css">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdgcworAAAAAKQ6wqXMEfnZ4tPgYJ0ZMD_M_hQz"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Tela de Cadastro</title>
 </head>
 <body>
@@ -17,8 +17,8 @@
                 </div>
                 <div class="nav-links">
                     <a href="index.html">Inicio</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Contato</a>
+                    <a href="index.html">Sobre</a>
+                    <a href="index.html">Contato</a>
                     <a href="login.html">Login</a>
                     <a href="#">Cadastro</a>
                 </div>
@@ -36,7 +36,7 @@
             <div class="cartao-login">
                 <h2>Cadastra-se</h2>
 
-                <form action="" class="formulario-login" onsubmit="return validarInformacoesforms()">
+                <form action="" class="formulario-login" onsubmit="return validarInformacoesforms() && validarRecaptcha()">
                     <div class="grupo-campo">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
@@ -50,6 +50,7 @@
                     <div class="grupo-campo">
                         <label for="cep">CEP</label>
                         <input type="text" id="cep" maxlength="9" onblur="buscarEnderecoPorCEP()" placeholder="CEP" required>
+                        
                     </div>
 
                     <div class="grupo-campo">
@@ -72,8 +73,9 @@
                         <label for="termos">Concordo com os termos de uso</label>
                     </div>
 
-                    <div class="grupo-campo" style="margin-top: 15px;">
-                        <div class="g-recaptcha" data-sitekey="6LdgcworAAAAAKQ6wqXMEfnZ4tPgYJ0ZMD_M_hQz"></div>
+                    <!-- reCAPTCHA -->
+                    <div class="grupo-campo">
+                        <div class="g-recaptcha" data-sitekey="6Ld2rhkrAAAAAIqGWjre5UXi0C6C33haEPhaqHmy"></div>
                     </div>
 
                     <div id="error-message" class="error-message"></div>
@@ -89,5 +91,11 @@
         </main>
 
         <script src="/AulaSenacProjeto-master/assets/js/script.js"></script>
+
+        <div id="widget-clima" class="widget-clima" style="display: none;">
+            <span id="widget-cidade">Cidade</span> •
+            <span id="widget-temp">--°C</span>
+            <span id="widget-icon" class="widget-icon"></span>
+        </div>
 </body>
 </html>

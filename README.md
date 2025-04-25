@@ -17,3 +17,7 @@ Nosso foco é entregar uma experiência fluida e que realmente faça sentido par
 💡 Nosso Propósito Mais do que criar uma plataforma informativa, nosso objetivo é construir um ambiente que gere conexão com o público. Um lugar seguro, transparente e acessível, onde o usuário se sinta à vontade para explorar, se cadastrar e participar.
 
 Queremos reforçar a importância do projeto, criar impacto positivo e, principalmente, mostrar que dá pra fazer diferente, com responsabilidade e foco em quem realmente importa: as pessoas.
+
+
+Links Importantes
+Figma: [Protótipo no Figma](https://www.figma.com/proto/yWg2QE6verch6kVYDSUfRx/Untitled?node-id=3141&t=AzzOBgQDZuTRCtqM-1)
